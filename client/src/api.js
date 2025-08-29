@@ -1,7 +1,9 @@
 
 import axios from 'axios'
 
-export const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000'
+export const API_BASE =
+  import.meta.env.VITE_API_BASE ||
+  "https://portfolio-generator-huy5.onrender.com";
 const api = axios.create({ baseURL: API_BASE })
 
 export const getPortfolios = async (params={}) => {
