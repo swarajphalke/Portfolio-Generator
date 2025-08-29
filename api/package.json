@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "start": "json-server db.json --port $PORT || 4000",
-    "dev": "json-server --watch db.json --port 4000"
+    "start": "node_modules/.bin/json-server db.json --port ${PORT:-4000}",
+    "dev": "node_modules/.bin/json-server --watch db.json --port 4000"
   },
   "dependencies": {
     "json-server": "^0.17.4"
